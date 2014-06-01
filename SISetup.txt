@@ -1,0 +1,61 @@
+# Default configuration file for the Sysinternals installer/seup program SISEtup
+#
+# Location http://www.lerup.com/SISetup/SISetup.txt
+# Date: December 3 2008
+
+# Sysinternals URLs
+site = download.sysinternals.com
+home = www.sysinternals.com
+
+# Should SISetup automatically update itself when a new version is available
+autoupdate = Yes
+
+# --- Application list
+
+name = Process Explorer
+source = Files/ProcessExplorer.zip
+destination = \ProcessExplorer
+menu = procexp.exe
+tip = Find out what files, registry keys and other objects processes have open, which DLLs they have loaded, and more.
+#autostart = Yes
+#quicklaunch = Yes
+default = Yes
+
+name = AutoRuns
+source = Files/Autoruns.zip
+destination = \Autoruns
+menu = autoruns.exe
+tip = This utility, which has the most comprehensive knowledge of auto-starting locations of any startup monitor,\nshows you what programs are configured to run during system bootup or login,\nand shows you the entries in the order Windows processes them.
+default = Yes
+
+name = Process Monitor
+source = Files/ProcessMonitor.zip
+destination = \ProcessMonitor
+menu = procmon.exe
+tip = Monitor file system, Registry, process, thread and DLL activity in real-time.
+default = Yes
+
+name = Desktops
+source = Files/Desktops.zip
+destination = \Desktops
+menu = Desktops.exe
+tip = This utility enables you to create up to four virtual desktops and to use a tray interface or hotkeys to preview\nwhat’s on each desktop and easily switch between them.
+
+name = ZoomIt
+source = Files/ZoomIt.zip
+destination = \ZoomIt
+menu = ZoomIt.exe
+tip = Presentation utility for zooming and drawing on the screen.
+
+name = Rootkit Revealer
+source = Files/RootkitRevealer.zip
+destination = \RootkitRevealer
+menu = RootkitRevealer.exe
+tip = Scan your system for rootkit-based malware.
+
+name = PsTools
+source = Files/PsTools.zip
+destination = \PsTools
+menu =
+tip = The PsTools suite includes command-line utilities for listing the processes running on local or remote computers,\nrunning processes remotely, rebooting computers, dumping event logs, and more.
+

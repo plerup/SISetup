@@ -1,0 +1,268 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_TEXTWIND, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 352
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 240
+    END
+
+    IDD_REMOVE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 212
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 106
+    END
+
+    IDD_SELECTAPPS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 178
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 283
+    END
+
+    IDD_SELECTINST, DIALOG
+    BEGIN
+        LEFTMARGIN, 6
+        RIGHTMARGIN, 253
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 64
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_TEXTWIND DIALOG 0, 0, 359, 247
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "SISetup"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Cancel",IDCANCEL,154,226,50,14,NOT WS_TABSTOP
+    EDITTEXT        IDC_LINES,7,7,345,202,ES_MULTILINE | ES_AUTOHSCROLL | WS_VSCROLL | WS_HSCROLL
+END
+
+IDD_REMOVE DIALOG 0, 0, 219, 113
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Uninstall SISetup"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,51,92,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,117,92,50,14
+    ICON            IDI_ICON2,IDC_STATIC,7,7,21,20
+    CTEXT           "Are you sure that you want to remove SISetup and all currently installed Sysinternals programs?",IDC_STATIC,38,12,170,21
+    CONTROL         "Remove all Sysinternals program settings",IDC_CHECK1,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,42,39,151,11
+    GROUPBOX        "",IDC_STATIC,32,3,180,52
+    CTEXT           "Please make sure that no Sysinternals programs are still running before starting this operation.",IDC_STATIC,38,65,170,21
+END
+
+IDD_SELECTAPPS DIALOGEX 0, 0, 185, 290
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "SISetup Program Selection"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,9,269,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,67,269,50,14
+    PUSHBUTTON      "Help",IDHELP,125,269,50,14
+    GROUPBOX        "Select which programs to install or update",IDC_GBOX1,7,5,171,239
+    LTEXT           "Program:",IDC_STATIC,18,19,71,8
+    LTEXT           "Autostart",IDC_STATIC,96,19,32,8
+    LTEXT           "Quick Launch",IDC_STATIC,130,19,47,8
+    CONTROL         "App",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,19,32,76,10
+    CONTROL         "",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,107,32,22,10
+    CONTROL         "",IDC_CHECK3,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,145,32,22,10
+    CONTROL         "App",IDC_CHECK4,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,19,46,76,10
+    CONTROL         "",IDC_CHECK5,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,107,46,22,10
+    CONTROL         "",IDC_CHECK6,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,145,46,22,10
+    CONTROL         "App",IDC_CHECK7,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,19,60,76,10
+    CONTROL         "",IDC_CHECK8,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,107,60,22,10
+    CONTROL         "",IDC_CHECK9,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,145,60,22,10
+    CONTROL         "App",IDC_CHECK10,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,19,74,76,10
+    CONTROL         "",IDC_CHECK11,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,107,74,22,10
+    CONTROL         "",IDC_CHECK12,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,145,74,22,10
+    CONTROL         "App",IDC_CHECK13,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,19,88,76,10
+    CONTROL         "",IDC_CHECK14,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,107,88,22,10
+    CONTROL         "",IDC_CHECK15,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,145,88,22,10
+    CONTROL         "App",IDC_CHECK16,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,19,102,76,10
+    CONTROL         "",IDC_CHECK17,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,107,102,22,10
+    CONTROL         "",IDC_CHECK18,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,145,102,22,10
+    CONTROL         "App",IDC_CHECK19,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,19,116,76,10
+    CONTROL         "",IDC_CHECK20,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,107,116,22,10
+    CONTROL         "",IDC_CHECK21,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,145,116,22,10
+    CONTROL         "App",IDC_CHECK22,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,19,130,76,10
+    CONTROL         "",IDC_CHECK23,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,107,130,22,10
+    CONTROL         "",IDC_CHECK24,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,145,130,22,10
+    CONTROL         "App",IDC_CHECK25,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,19,144,76,10
+    CONTROL         "",IDC_CHECK26,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,107,144,22,10
+    CONTROL         "",IDC_CHECK27,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,145,144,22,10
+    CONTROL         "App",IDC_CHECK28,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,19,158,76,10
+    CONTROL         "",IDC_CHECK29,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,107,158,22,10
+    CONTROL         "",IDC_CHECK30,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,145,158,22,10
+    CONTROL         "App",IDC_CHECK31,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,19,172,76,10
+    CONTROL         "",IDC_CHECK32,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,107,172,22,10
+    CONTROL         "",IDC_CHECK33,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,145,172,22,10
+    CONTROL         "App",IDC_CHECK34,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,19,186,76,10
+    CONTROL         "",IDC_CHECK35,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,107,186,22,10
+    CONTROL         "",IDC_CHECK36,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,145,186,22,10
+    CONTROL         "App",IDC_CHECK37,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,19,200,76,10
+    CONTROL         "",IDC_CHECK38,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,107,200,22,10
+    CONTROL         "",IDC_CHECK39,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,145,200,22,10
+    CONTROL         "App",IDC_CHECK40,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,19,214,76,10
+    CONTROL         "",IDC_CHECK41,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,107,214,22,10
+    CONTROL         "",IDC_CHECK42,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,145,214,22,10
+    CONTROL         "App",IDC_CHECK43,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,19,228,76,10
+    CONTROL         "",IDC_CHECK44,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,107,228,22,10
+    CONTROL         "",IDC_CHECK45,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,145,228,22,10
+    CONTROL         "Check for updates during login",IDC_CHECK_LOGON,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,252,162,10
+END
+
+IDD_SELECTINST DIALOGEX 0, 0, 260, 71
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Install SISetup"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,72,50,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,138,50,50,14
+    GROUPBOX        "Select installation directory",IDC_STATIC,6,5,191,32
+    EDITTEXT        IDC_INST_DIR,11,16,181,15,ES_AUTOHSCROLL
+    PUSHBUTTON      "Browse...",ID_BROWSE,203,16,50,14
+    ICON            IDI_ICON1,IDC_STATIC,11,42,21,20
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON1               ICON                    "icon1.ico"
+IDI_ICON2               ICON                    "icon2.ico"
+IDI_ICON3               ICON                    "icon3.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,3,2,0
+ PRODUCTVERSION 1,3,2,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "Sysinternals installation/update program"
+            VALUE "CompanyName", "Peter Lerup"
+            VALUE "FileDescription", "SISetup"
+            VALUE "FileVersion", "1.3.2.0"
+            VALUE "InternalName", "SISetup"
+            VALUE "LegalCopyright", "Copyright © 2007-2014 Peter Lerup"
+            VALUE "OriginalFilename", "SISetup.exe"
+            VALUE "ProductName", " SISetup"
+            VALUE "ProductVersion", "1.3.2.0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Swedish (Sweden) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_SVE)
+LANGUAGE LANG_SWEDISH, SUBLANG_SWEDISH
+#pragma code_page(1252)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Swedish (Sweden) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
